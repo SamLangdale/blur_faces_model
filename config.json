@@ -1,0 +1,17 @@
+{
+  "blocker": {
+    "model_path": "weights/best.pt",
+    "transparent_color": "#ffffff",
+    "confidence": 0.1,
+    "image_size": 1920,
+    "update_interval_ms": 1
+  },
+  "blur_video": {
+    "model_path": "weights/best.pt",
+    "tracker_path": "bytetrack_cust.yaml",
+    "confidence": 0.1,
+    "image_size": 1920,
+    "show_annotations": false,
+    "padding": 0.2
+  }
+}

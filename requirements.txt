@@ -1,0 +1,6 @@
+numpy
+opencv-python
+Pillow
+ultralytics>=8.3.0
+dxcam
+imageio-ffmpeg
