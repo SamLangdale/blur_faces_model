@@ -6,7 +6,7 @@ This folder contains two programs that use a YOLO model you provide to detect fa
 - `blocker.py` displays a live, click-through blur overlay over detected faces on the Windows desktop.
 - `training.py` trains a model using your own dataset configuration and data.
 
-Model weights and datasets are not included. Before running either inference program, provide a compatible model checkpoint and set its path in `config.json`. The default path is `weights/best.pt`; this folder is excluded from version control.
+Model weights and datasets are not included. Before running either inference program, provide a compatible model checkpoint and set its path in `config.json`. 
 
 Face detection is not guaranteed to find every face. Review the output before sharing it if complete anonymization is important.
 
@@ -24,11 +24,7 @@ py -3 -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-If PowerShell prevents activation, you can use the environment's Python directly:
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
 
 ## Configuration
 
@@ -92,6 +88,4 @@ python training.py
 
 The script starts from Ultralytics' `yolo11s.pt` checkpoint, which Ultralytics may download when first needed, and requires a CUDA-capable GPU by default (`device="cuda"` in `training.py`). Training outputs are written by Ultralytics and are excluded from version control.
 
-## License
 
-The original project code in this folder is licensed under GNU AGPL-3.0-only; see [LICENSE-AGPL-3.0.txt](LICENSE-AGPL-3.0.txt). This license does not cover model weights, datasets, or third-party components. Ultralytics' license applies to Ultralytics itself; using it does not by itself determine the license of this project's code. Review relevant third-party terms and get legal advice if you need a definitive distribution assessment.
